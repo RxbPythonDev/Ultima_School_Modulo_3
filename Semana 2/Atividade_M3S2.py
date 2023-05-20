@@ -3,6 +3,7 @@ def decorator_imprimir(func):
         print(f'CAPITAL: {capital} TAXA: {taxa} TEMPO: {tempo}')
         resultado = func(capital, taxa, tempo)
         print(f'RESULTADO: {resultado}')
+        return resultado
     return inner
 
 @decorator_imprimir
